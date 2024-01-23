@@ -160,7 +160,7 @@ if selected == "Projects":
                     DeepLabv3 architecture with resenet18 backbone, mIOU>84%
                     """
                 )
-                st.markdown("[SEOGen >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
+                st.markdown("[SemSeg >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
 
             with col2:
                 #st.image(pdfchat_sample)
@@ -170,7 +170,7 @@ if selected == "Projects":
                     Inverse Depth on Synscapes dataset, Work in Progress
                     """
                 )
-                st.markdown("[PDFChat >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
+                st.markdown("[Depth >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
 
 
 
