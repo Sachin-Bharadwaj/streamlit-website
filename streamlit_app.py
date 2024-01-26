@@ -71,6 +71,8 @@ seogen_sample = seogen_sample.resize((800,800))
 pdfchat_sample = Image.open("./assets/PDF-Chat.jpg")
 pdfchat_sample = pdfchat_sample.resize((800,800))
 seg_sample = Image.open("./assets/sementicseg.jpg")
+segdepth_sample = Image.open("./assets/sementicdepthMultitask.jpg")
+segdepth_sample = segdepth_sample.resize((800,320))
 
 if selected == "Projects":
     with st.container():
@@ -163,11 +165,11 @@ if selected == "Projects":
                 st.markdown("[SemSeg >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
 
             with col2:
-                #st.image(pdfchat_sample)
+                st.image(segdepth_sample)
                 st.subheader("Inv Depth")
                 st.write(
                     """
-                    Inverse Depth on Synscapes dataset, Work in Progress
+                    Inverse Depth on Synscapes dataset, MultiTask Architecture, Resnet18 backbone, ASPP, seperate decoder for depth and segmentation, scale invariant depth loss
                     """
                 )
                 st.markdown("[Depth >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
