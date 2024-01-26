@@ -166,10 +166,10 @@ if selected == "Projects":
 
             with col2:
                 st.image(segdepth_sample)
-                st.subheader("Inv Depth")
+                st.subheader("Depth")
                 st.write(
                     """
-                    Inverse Depth on Synscapes dataset, MultiTask Architecture, Resnet18 backbone, ASPP, seperate decoder for depth and segmentation, scale invariant depth loss
+                    Depth Estimation on Synscapes dataset, MultiTask Architecture, Resnet18 backbone, ASPP, seperate decoder for depth and segmentation, scale invariant depth loss
                     """
                 )
                 st.markdown("[Depth >](https://github.com/Sachin-Bharadwaj/SementicSegmentation)")
